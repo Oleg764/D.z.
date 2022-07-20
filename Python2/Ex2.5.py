@@ -1,3 +1,5 @@
+#Реализуйте алгоритм перемешивания списка.
+
 import random
 
 def get_list(n, lft, rght):
