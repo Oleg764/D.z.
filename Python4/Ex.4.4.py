@@ -6,7 +6,7 @@
 from random import randint
 import itertools
 
-k = randint(2, 7)
+k =int (input('Введите степень k  :'))
 
 def get_ratios(k):
     ratios = [randint(0, 10) for i in range (k + 1)]
@@ -34,7 +34,7 @@ with open('Polynomial.txt', 'w') as data:
 
 # Второй многочлен для следующей задачи:
 
-k = randint(2, 5)
+k = 2
 
 ratios = get_ratios(k) 
 polynom2 = get_polynom(k, ratios)
