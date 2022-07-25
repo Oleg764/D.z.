@@ -28,7 +28,7 @@ ratios = get_ratios(k)
 polynom1 = get_polynom(k, ratios)
 print(polynom1)
 
-with open('Polynomial.txt', 'w') as data:
+with open('C:\Python\Python4\Polynomial.txt', 'w') as data:
     data.write(polynom1)
 
 
@@ -40,5 +40,5 @@ ratios = get_ratios(k)
 polynom2 = get_polynom(k, ratios)
 print(polynom2)
 
-with open('Polynom2.txt', 'w') as data:
+with open('C:\Python\Python4\Polynom2.txt', 'w') as data:
     data.write(polynom2)
