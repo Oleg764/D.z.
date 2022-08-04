@@ -2,14 +2,14 @@
 #которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
 #Пример:
 #- [1.1, 1.2, 3.1, 5, 10.01] => 0.19
-x=[]
+
 A=[1.1, 1.2 ,3.1, 5, 10.01]
 for i in  range (5): 
-    x.append(round(A[i]-int(A[i]),3))
-print (x)
-m=x[0]
+    A.append(round(A[i]-int(A[i]),3))
+print (A)
+m=A[0]
 def xmax(m):
-
+x=A[5]
     for i in x:
         if i>m:
             m=i
@@ -17,7 +17,7 @@ def xmax(m):
 min=x[0]   
 def xmin(min):
     
-    for i in x:
+    for i in list:
         if i<min:
             min=i
     return min     

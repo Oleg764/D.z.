@@ -42,7 +42,7 @@ human = True
 rt=[1,2,3,4,5,6,7,8,9]
 while game_over == False:
     print_maps()
-    if human == True:
+    if human == True and rt!=[]:
         symbol = "X"
         step = int(input("Человек, ваш ход: "))
         rt.remove(step)
@@ -54,6 +54,7 @@ while game_over == False:
             rt.remove(step)
         else:
             print('ничья')
+            break
     if step != "":
         step_maps(step,symbol) 
         win = get_result() # определим победителя
