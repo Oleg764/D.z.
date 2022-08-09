@@ -12,7 +12,7 @@ root.iconbitmap("Python8\call-list.ico")
 data = ex.export_data()
 
 listbox = Listbox()
-
+listbox.configure(font=("Courier", 12, "italic"))
 # добавляем в список начальные элементы
 for data in data:
     listbox.insert(END, data)
@@ -51,10 +51,10 @@ def add():
 Fio_label = Label(
     text="Фамилия     |    Имя      |   тел.          |   Примечание")
 Fio_label.grid(row=1, column=0, sticky="w")
-
+Fio_label .configure(font=("Courier", 12))
 # текстовое поле и кнопка для добавления в список
-tel_entry = Entry(textvariable=data, width=70)
-tel_entry.grid(column=0, row=0, padx=6, pady=6)
+tel_entry = Entry(textvariable=data, width=90,fg='darkblue')
+tel_entry.grid(column=0, row=0, padx=5, pady=0)
 add_button = Button(text="Добавить", command=add).grid(
     column=1, row=0, padx=6, pady=6)
 delete_button = Button(text="Удалить", command=delete).grid(
