@@ -43,7 +43,7 @@ def delete():
 
 def add():
     new_data = tel_entry.get()
-    listbox.insert(0, new_data)
+    listbox.insert(END, new_data)
     imp.import_data(new_data)
 
 
