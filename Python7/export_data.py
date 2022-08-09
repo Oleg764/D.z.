@@ -1,7 +1,7 @@
 # модуль экспорта данных 
 
 def export_data():
-    with open('Python7/phonebook/phone.txt', 'r+') as f:
+    with open('Python8/phonebook/phone1.txt', 'r+') as f:
         data = []
         t = []
         for line in f:
@@ -21,3 +21,4 @@ def export_data():
                     data.append(t)
                     t= []
     return data
+print (export_data())    
