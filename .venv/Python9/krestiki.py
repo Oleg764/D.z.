@@ -2,7 +2,7 @@ from tkinter import *
 import random
 root = Tk()
 root.title('Крестики-нолики')
-root.iconbitmap("C:\Python\.venv\изображение_2022-08-23_134411331.ico")
+root.iconbitmap("C:\Python\.venv\Python9\изображение_2022-08-23_134411331.ico")
 game_run = True
 field = []
 cross_count = 0       # библиотеки и объявление переменных
